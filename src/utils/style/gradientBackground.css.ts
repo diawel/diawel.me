@@ -1,7 +1,7 @@
 import { keyframes } from '@vanilla-extract/css'
 
 export const gradientBackground = {
-  backgroundColor: 'hsla(234,0%,28%,1)',
+  backgroundColor: 'hsla(234,0%,19%,1)',
   backgroundImage: [
     'radial-gradient(at 40% 20%, hsla(209,97%,48%,1) 0px, transparent 50%)',
     'radial-gradient(at 80% 0%, hsla(200,99%,47%,1) 0px, transparent 50%)',

@@ -9,7 +9,7 @@ globalStyle('*', {
 
 globalStyle('body', {
   margin: 0,
-  backgroundColor: color.white,
+  backgroundColor: color.background,
   color: color.black,
 })
 
