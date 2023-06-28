@@ -4,7 +4,7 @@ export type ProjectThumbnailProps = {
   src: string
 }
 
-const ProjectThumbnail: React.FC<ProjectThumbnailProps> = (props) => {
+const ProjectThumbnail = (props: ProjectThumbnailProps) => {
   const { src } = props
   return <img src={src} className={thumbnail} />
 }

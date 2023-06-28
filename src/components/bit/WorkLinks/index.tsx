@@ -1,12 +1,12 @@
 import { anchor, container } from './index.css'
 
-export type ProjectLinkType = { url: string; text: string }
+export type WorkLinkType = { url: string; text: string }
 
-export type ProjectLinksProps = {
-  links: ProjectLinkType[]
+export type WorkLinksProps = {
+  links: WorkLinkType[]
 }
 
-const ProjectLinks: React.FC<ProjectLinksProps> = (props) => {
+const WorkLinks = (props: WorkLinksProps) => {
   const { links } = props
   return (
     <div className={container}>
@@ -25,4 +25,4 @@ const ProjectLinks: React.FC<ProjectLinksProps> = (props) => {
   )
 }
 
-export default ProjectLinks
+export default WorkLinks

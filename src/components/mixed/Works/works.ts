@@ -2,7 +2,7 @@ import chronotube from 'src/assets/projectThumbnail/chronotube.webp'
 import ogplink from 'src/assets/projectThumbnail/ogplink.webp'
 import liveTracker from 'src/assets/projectThumbnail/liveTracker.webp'
 
-export const projects = [
+export const works = [
   {
     name: 'Chronotube',
     thumbnail: chronotube,
@@ -10,6 +10,7 @@ export const projects = [
       'YouTubeの履歴から、チャンネル登録日や登録のきっかけを調べられるサービス',
     description:
       'YouTubeのチャンネル登録日を取得し、再生履歴と合わせて、登録に至った経緯を調べるサービスです。2020年ごろに中心となる機能を公開し、その後は、専門的な知識がなくても使いやすいサービスを目指して、アップデートを重ねています。',
+    technologies: ['React', 'TypeScript', 'Vite', 'CSS', 'PHP'],
     links: [
       { url: 'https://chronotube.diawel.me/', text: 'Chronotubeをつかう' },
       { url: 'https://github.com/diawel/Chronotube', text: 'GitHub' },
@@ -22,9 +23,10 @@ export const projects = [
   {
     name: 'OGPlink',
     thumbnail: ogplink,
-    phrase: '共有リンクのSNS上での表示を上書きできるツール',
+    phrase: '共有リンクのSNS上での表示を上書きできるサービス',
     description:
       'Webページのリンクを、TwitterなどのSNS上に貼り付けた際に表示される情報を上書きできます。サムネイル画像にはページ内の他の画像を設定したり、URLを直接指定することもできます。',
+    technologies: ['HTML', 'JavaScript', 'CSS', 'PHP'],
     links: [
       { url: 'https://ogplink.diawel.me/', text: 'OGPlinkをつかう' },
       {
@@ -39,6 +41,7 @@ export const projects = [
     phrase: 'リアルタイムで映像をトラッキング、画像を重ねられるツール',
     description:
       'Webカメラやウィンドウなどの映像を入力として、リアルタイムで特徴点をトラッキングすることができます。アバター側に手を加えずに、小道具を身につけたいときなどの使用を想定しています。',
+    technologies: ['HTML', 'JavaScript', 'CSS'],
     links: [
       { url: 'https://livetracker.diawel.me/', text: 'Live Trackerをつかう' },
       {

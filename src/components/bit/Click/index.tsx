@@ -3,7 +3,7 @@ export type ClickProps = {
   children: React.ReactNode
 }
 
-const Click: React.FC<ClickProps> = (props) => {
+const Click = (props: ClickProps) => {
   const { onClick } = props
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {

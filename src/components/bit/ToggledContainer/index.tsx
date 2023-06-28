@@ -7,7 +7,7 @@ export type ToggledContainerProps = {
   currentContainerRef?: React.MutableRefObject<HTMLDivElement | null>
 }
 
-const ToggledContainer: React.FC<ToggledContainerProps> = (props) => {
+const ToggledContainer = (props: ToggledContainerProps) => {
   const { children, shown, currentContainerRef } = props
   const haveShown = useRef(false)
 

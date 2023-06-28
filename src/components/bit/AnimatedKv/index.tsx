@@ -1,18 +1,18 @@
 import gsap from 'gsap'
-import { kv, parallaxPosition } from './index.css'
+import { kv } from './index.css'
 import icon from 'src/assets/icon.webp'
-import { useLayoutEffect } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 
 const AnimatedKv = () => {
+  const imgRef = useRef<HTMLImageElement>(null)
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(`.${kv}`, {
-        bottom: parallaxPosition.to,
+      gsap.to(imgRef.current, {
+        bottom: 0,
+        ease: 'none',
         scrollTrigger: {
-          trigger: document.body,
-          start: 'top top',
-          end: 'bottom bottom',
-          scrub: 1,
+          trigger: imgRef.current,
+          scrub: 0,
         },
       })
     })
@@ -20,7 +20,7 @@ const AnimatedKv = () => {
     return () => ctx.revert()
   }, [])
 
-  return <img className={kv} src={icon} />
+  return <img className={kv} src={icon} ref={imgRef} />
 }
 
 export default AnimatedKv

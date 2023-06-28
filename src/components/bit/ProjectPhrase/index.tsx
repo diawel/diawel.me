@@ -4,7 +4,7 @@ export type ProjectPhraseProps = {
   text: string
 }
 
-const ProjectPhrase: React.FC<ProjectPhraseProps> = (props) => {
+const ProjectPhrase = (props: ProjectPhraseProps) => {
   const { text } = props
   return <div className={phrase}>{text}</div>
 }

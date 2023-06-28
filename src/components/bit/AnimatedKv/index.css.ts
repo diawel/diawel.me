@@ -1,12 +1,18 @@
 import { style } from '@vanilla-extract/css'
-
-export const parallaxPosition = { from: 72, to: 0 }
+import { mobile, pc } from 'src/utils/style/mediaQuery'
 
 export const kv = style({
   position: 'absolute',
   right: -24,
-  bottom: parallaxPosition.from,
   width: '80%',
   maxWidth: '80svh',
   zIndex: 0,
+  '@media': {
+    [mobile]: {
+      bottom: 72,
+    },
+    [pc]: {
+      bottom: 128,
+    },
+  },
 })

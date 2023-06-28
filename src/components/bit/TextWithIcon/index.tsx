@@ -6,7 +6,7 @@ export type TextWithIconProps = {
   textStyle?: string
 }
 
-const TextWithIcon: React.FC<TextWithIconProps> = (props) => {
+const TextWithIcon = (props: TextWithIconProps) => {
   const { iconUrl, text, textStyle } = props
   return (
     <div className={container}>

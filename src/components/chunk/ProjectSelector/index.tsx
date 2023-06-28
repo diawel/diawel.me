@@ -9,7 +9,7 @@ export type ProjectSelectorProps = {
   setSelectedIndex: (index: number) => void
 }
 
-const ProjectSelector: React.FC<ProjectSelectorProps> = (props) => {
+const ProjectSelector = (props: ProjectSelectorProps) => {
   const { projectNames, selectedIndex, setSelectedIndex } = props
   return (
     <div className={container}>

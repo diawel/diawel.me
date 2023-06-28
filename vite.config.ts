@@ -10,4 +10,9 @@ export default defineConfig({
       'src/': `${__dirname}/src/`,
     },
   },
+  server: {
+    proxy: {
+      '/api': 'https://diawel.me/',
+    },
+  },
 })
