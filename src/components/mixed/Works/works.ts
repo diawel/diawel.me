@@ -8,8 +8,10 @@ export const works = [
     thumbnail: chronotube,
     phrase:
       'YouTubeの履歴から、チャンネル登録日や登録のきっかけを調べられるサービス',
-    description:
-      'YouTubeのチャンネル登録日を取得し、再生履歴と合わせて、登録に至った経緯を調べるサービスです。2020年ごろに中心となる機能を公開し、その後は、専門的な知識がなくても使いやすいサービスを目指して、アップデートを重ねています。',
+    description: [
+      'YouTubeのチャンネル登録日を取得し、再生履歴と合わせて、登録に至った経緯を調べるサービスです。Google アカウントでのログインだけから、利用を開始できます。',
+      '私がこれまでに開発したものの中で、現在最も多くの方にご利用いただいています。開発当初は、ユーザーの導線などはあまり意識していなかったものの、その後アップデートを重ね、現在ではユーザーにとっての分かりやすさを最優先に考えた設計となっています。',
+    ],
     technologies: ['React', 'TypeScript', 'Vite', 'CSS', 'PHP'],
     links: [
       { url: 'https://chronotube.diawel.me/', text: 'Chronotubeをつかう' },
@@ -24,8 +26,10 @@ export const works = [
     name: 'OGPlink',
     thumbnail: ogplink,
     phrase: '共有リンクのSNS上での表示を上書きできるサービス',
-    description:
+    description: [
       'Webページのリンクを、TwitterなどのSNS上に貼り付けた際に表示される情報を上書きできます。サムネイル画像にはページ内の他の画像を設定したり、URLを直接指定することもできます。',
+      '現在提供しているサービスの中で、最もバックエンド寄りなサービスです。具体的には、入力されたURLに既に設定されているOGP情報を取得する、上書きの候補となる画像を取得する、上書き済みのURLを生成して、アクセスした各種SNSのbotにはOGP情報を返し、ユーザーに対しては本来のページへのリダイレクトを行うなどの処理をしています。',
+    ],
     technologies: ['HTML', 'JavaScript', 'CSS', 'PHP'],
     links: [
       { url: 'https://ogplink.diawel.me/', text: 'OGPlinkをつかう' },
@@ -39,8 +43,10 @@ export const works = [
     name: 'Live Tracker',
     thumbnail: liveTracker,
     phrase: 'リアルタイムで映像をトラッキング、画像を重ねられるツール',
-    description:
+    description: [
       'Webカメラやウィンドウなどの映像を入力として、リアルタイムで特徴点をトラッキングすることができます。アバター側に手を加えずに、小道具を身につけたいときなどの使用を想定しています。',
+      '操作画面が煩雑になりそうなツールですが、メインとなるユーザーがある程度PC操作に慣れていることも踏まえたうえで、ユーザーの導線を明確にしています。',
+    ],
     technologies: ['HTML', 'JavaScript', 'CSS'],
     links: [
       { url: 'https://livetracker.diawel.me/', text: 'Live Trackerをつかう' },

@@ -48,18 +48,14 @@ export const background = style({
 
 export const animatedChar = style({
   display: 'inline-block',
-  animationName: 'none',
-  animationTimingFunction: timingFunciton.easeOut,
-  animationFillMode: 'both',
-})
-
-export const fadeIn = keyframes({
-  '0%': {
-    transform: 'translateY(-4px)',
-    opacity: 0,
-  },
-  '100%': {
-    transform: 'translateY(0)',
-    opacity: 1,
-  },
+  animation: `${keyframes({
+    '0%': {
+      transform: 'translateY(-4px)',
+      opacity: 0,
+    },
+    '100%': {
+      transform: 'translateY(0)',
+      opacity: 1,
+    },
+  })} ${timingFunciton.easeOut} both paused`,
 })

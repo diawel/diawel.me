@@ -2,6 +2,7 @@ import { keyframes, style } from '@vanilla-extract/css'
 import { color } from 'src/utils/style/color'
 import { fontSize } from 'src/utils/style/fontSize'
 import { mobile, pc } from 'src/utils/style/mediaQuery'
+import { timingFunciton } from 'src/utils/style/timingFunction'
 
 export const titleContainer = style({
   '@media': {
@@ -48,6 +49,28 @@ export const articleInnerContainer = style({
   display: 'flex',
   flexDirection: 'column',
   gap: 24,
+  '@media': {
+    [mobile]: {
+      animation: `${keyframes({
+        '0%': {
+          transform: 'translateY(24px)',
+        },
+        '100%': {
+          transform: 'translateY(0)',
+        },
+      })} 0.6s ${timingFunciton.easeInOut} both paused`,
+    },
+    [pc]: {
+      animation: `${keyframes({
+        '0%': {
+          transform: 'translateY(48px)',
+        },
+        '100%': {
+          transform: 'translateY(0)',
+        },
+      })} 0.6s ${timingFunciton.easeInOut} both paused`,
+    },
+  },
 })
 
 export const upperContainer = style({
@@ -108,17 +131,6 @@ export const descriptionContaier = style({
   },
 })
 
-export const slideInBottom = keyframes({
-  '0%': {
-    transform: 'translateY(24px)',
-    opacity: 0,
-  },
-  '100%': {
-    transform: 'translateY(0)',
-    opacity: 1,
-  },
-})
-
 export const animatedContainer = style({
-  opacity: 0,
+  transform: 'translateY(48px)',
 })

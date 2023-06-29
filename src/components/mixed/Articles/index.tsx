@@ -8,7 +8,6 @@ import {
   articleTitleContainer,
   container,
   descriptionContaier,
-  slideInBottom,
   thumbnail,
   titleContainer,
   upperContainer,
@@ -64,15 +63,14 @@ const Articles = () => {
                   if (trigger.firstChild)
                     (
                       trigger.firstChild as HTMLElement
-                    ).style.animation = `${slideInBottom} 0.9s ${
-                      index * 0.1
-                    }s ${timingFunciton.easeOut} both`
+                    ).style.animationPlayState = 'running'
                 }}
               >
                 <div
                   className={[articleInnerContainer, animatedContainer].join(
                     ' '
                   )}
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className={upperContainer}>
                     <img

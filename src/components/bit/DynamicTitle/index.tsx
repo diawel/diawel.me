@@ -1,5 +1,5 @@
 import { sofiaPro } from 'src/utils/style/textStyle.css'
-import { animatedChar, background, container, fadeIn, text } from './index.css'
+import { animatedChar, background, container, text } from './index.css'
 import { color } from 'src/utils/style/color'
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
@@ -40,7 +40,7 @@ const DynamicTitle = (props: DynamicTitleProps) => {
           onEnter={(trigger) => {
             ;(Array.from(trigger.children) as HTMLElement[]).forEach(
               (child) => {
-                child.style.animationName = fadeIn
+                child.style.animationPlayState = 'running'
               }
             )
           }}

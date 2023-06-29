@@ -169,7 +169,13 @@ const Works = () => {
                     }}
                   >
                     <div className={animatedContainer}>
-                      <div className={description}>{work.description}</div>
+                      {work.description.map((descriptionParagraph, index) => {
+                        return (
+                          <div key={index} className={description}>
+                            {descriptionParagraph}
+                          </div>
+                        )
+                      })}
                       <div>
                         技術スタック
                         <ul>
