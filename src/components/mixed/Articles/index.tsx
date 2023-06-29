@@ -14,7 +14,6 @@ import {
 } from './index.css'
 import BeltedText from 'src/components/bit/BeltedText'
 import blankArticle from 'src/assets/blankArticle.png'
-import { timingFunciton } from 'src/utils/style/timingFunction'
 import InScreenTrigger from 'src/components/bit/InScreenTrigger'
 
 type Article = {
